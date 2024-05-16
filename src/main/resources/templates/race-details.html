@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Race Details</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 40px;
+    color: #333;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:hover {background-color: #f5f5f5;}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+form {
+    margin-top: 20px;
+}
+input[type="text"], input[type="number"], button {
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+.header {
+    overflow: hidden;
+    background-color: #333;
+    padding: 20px 10px;
+}
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+<h1 th:text="${race.name} + ' Details'"></h1>
+<table>
+    <thead>
+    <tr>
+        <th>Runner Name</th>
+        <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="result : ${results}">
+        <td th:text="${result.runner.name}"></td>
+        <td th:text="${result.time}"></td>
+    </tr>
+    </tbody>
+</table><br>
+<a href="/">Back to Races</a>
+</body>
+</html>
