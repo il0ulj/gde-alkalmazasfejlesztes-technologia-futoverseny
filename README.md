@@ -41,3 +41,14 @@ Az entitásokhoz vegyünk fel automatikusan tesztadatot a program futtatásakor 
 
 # Leadás
 A projektet GitHub-on kell hostolni, és a repository URL-jét kell emailben elküldeni az oktató e-mail címére.
+
+# Felhasznált segédanyagok
+- https://start.spring.io/
+- https://spring.io/projects/spring-boot
+- https://www.postman.com/
+
+# Felhasznált függőségek
+- H2 Database
+- Spring Data JPA
+- Spring Web
+- Thymeleaf
