@@ -55,4 +55,3 @@ public class Runner {
         this.uniqueIdentifier = uniqueIdentifier;
     }
 }
-

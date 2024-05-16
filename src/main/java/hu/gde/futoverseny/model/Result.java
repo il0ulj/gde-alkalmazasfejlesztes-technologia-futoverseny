@@ -48,4 +48,3 @@ public class Result {
         this.time = time;
     }
 }
-

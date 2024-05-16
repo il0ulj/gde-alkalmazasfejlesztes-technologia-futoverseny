@@ -1,17 +1,9 @@
-package hu.gde.futoverseny.model;
+package hu.gde.futoverseny.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
-public class Race {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class RaceUpdate {
     private Long id;
     private String name;
-    private Double distance;
+    private double distance;
 
     public Long getId() {
         return id;
